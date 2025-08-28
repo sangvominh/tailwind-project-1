@@ -1,0 +1,28 @@
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .button-primary {
+    @apply min-w-[110px] rounded-[6px] bg-[#212832] px-[30px] py-[15px] text-nowrap text-white;
+  }
+}
+
+@layer utilities {
+  .heading-section {
+    color: #212832;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.125rem; /* 125% */
+  }
+  .desc-section {
+    color: #696d77;
+    font-weight: 400;
+    line-height: 1.75rem; /* 175% */
+  }
+}

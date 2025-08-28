@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project 5 - tailwind</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto pt-[42px]">
+      <!-- header -->
+      <div class="flex items-center">
+        <!-- logo -->
+        <a href="" class="flex gap-x-2">
+          <img
+            src="src/assets/logo.svg"
+            alt="Celo Bank"
+            class="h-[24px] w-[24px]"
+          />
+          <img src="src/assets/CeloBank.svg" alt="" class="h-[21px] w-[72px]" />
+        </a>
+        <!-- nav -->
+        <nav class="ml-[70px] hidden md:block">
+          <ul class="flex space-x-[8px] lg:space-x-[48px]">
+            <li><a href="#!" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#!" class="hover:text-blue-500">Products</a></li>
+            <li><a href="#!" class="hover:text-blue-500">Features</a></li>
+            <li><a href="#!" class="hover:text-blue-500">Blog</a></li>
+          </ul>
+        </nav>
+        <!-- login-up -->
+        <div class="ml-auto flex items-center space-x-[10px]">
+          <div>
+            <a href="#!" class="text-nowrap">Log in</a>
+          </div>
+          <a href="#!" class="button-primary">Sign up</a>
+        </div>
+      </div>
+      <!-- hero -->
+      <section class="mt-[76px] flex items-center justify-between">
+        <!-- content -->
+        <section data-aos="fade-right">
+          <!-- decor -->
+          <div class="flex items-center">
+            <span class="h-[2px] w-[18px] bg-gray-400"></span>
+            <span class="desc-section ml-[12px]">Digital Smart Wallet</span>
+          </div>
+          <!-- heading -->
+          <h1
+            class="mt-[12px] max-w-[500px] text-[3.75rem]/[4.375rem] font-[700]"
+          >
+            Digital <span class="text-[#7264D6]">Payment</span> For Everyone.
+          </h1>
+          <p class="desc-section mt-[20px] max-w-[540px]">
+            We bring together eveything that’s required to build websites and
+            apps that accept payments and send payouts globally. We are the best
+            platform.
+          </p>
+          <!-- form -->
+          <form
+            action=""
+            class="mt-[40px] flex max-w-[540px] items-center rounded-[8px] p-[8px] hover:shadow-xl"
+          >
+            <input
+              type="email"
+              placeholder="Your email address"
+              required
+              class="desc-section ml-[15px] w-[70%] text-nowrap focus:outline-none"
+            />
+            <button class="button-primary bg-[#7264D6]">Get Started</button>
+          </form>
+          <!-- desc -->
+          <p class="desc-section mt-[20px] text-nowrap">
+            *We’ll respect the inbox and never share your email.
+          </p>
+        </section>
+        <!-- media -->
+        <div class="hidden md:block">
+          <img src="src/assets/Mobile.png" alt="mobile" />
+        </div>
+      </section>
+      <!-- how it work -->
+      <section class="mt-[100px] flex justify-between md:mt-[160px]">
+        <div class="hidden md:block">
+          <img src="src/assets/person.png" alt="person" />
+        </div>
+        <section class="max-w-[470px]">
+          <div class="flex items-center">
+            <span class="h-[2px] w-[18px] bg-gray-400"></span>
+            <span class="desc-section ml-[12px]">Digital Smart Wallet</span>
+          </div>
+          <h2 class="heading-section mt-[12px]">How It Works</h2>
+          <ol class="mt-[70px] list-decimal space-y-[30px]">
+            <li class="space-y-[16px]">
+              <h3 class="text-[1.35rem] font-[600]">
+                Open a High Interest Checking account
+              </h3>
+              <p class="desc-section">
+                Fund your bank account with a minimum balance of $100. Enroll in
+                3 minutes or less!
+              </p>
+            </li>
+            <li>
+              <h3 class="text-[1.35rem] font-[600]">
+                10 point-of-sale transactions each Month that are at least $10
+                each.
+              </h3>
+              <p class="desc-section">
+                Be sure to use your rewards checking account as often as
+                possible in order to accrue APY!
+              </p>
+            </li>
+            <li>
+              <h3 class="text-[1.35rem] font-[600]">Receive up to 5.50% APY</h3>
+              <p class="desc-section">
+                The APY you earn will be based on your account balance and
+                satisfying the transaction requirement.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </section>
+      <!-- what client say -->
+      <section class="mt-[100px] md:mt-[160px]">
+        <!-- top row -->
+        <div class="flex flex-col items-center">
+          <div class="flex items-center">
+            <span class="h-[2px] w-[18px] bg-gray-400"></span>
+            <span class="desc-section ml-[12px]">Our Testimonial</span>
+          </div>
+          <h2 class="heading-section">What Clients Says</h2>
+          <p class="desc-section max-w-[435px] text-center">
+            Read what clients says about us and about our online banking
+            services that may inspire you
+          </p>
+        </div>
+        <div class="mt-[70px] flex justify-between">
+          <!-- box 1 -->
+          <div>
+            <div
+              class="relative z-10 rounded-xl bg-white px-[5px] py-[5px] transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:z-0 after:-translate-x-1/2 after:translate-y-[100%] after:border-[40px] after:border-b-0 after:border-solid after:border-x-transparent after:border-t-white after:content-[''] hover:drop-shadow-[0_22px_54px_rgba(0,0,0,0.07)] md:px-[28px] md:py-[42px]"
+            >
+              <p class="desc-section line-clamp-6 max-w-[514px] text-center">
+                Fantastic platform for online banking. The best online banking
+                platform I have used. Payments, loans, and money transfers have
+                never been so much easier before. I am very much happy about
+                this great online bank.
+              </p>
+              <!-- tam giac -->
+            </div>
+            <div class="mt-[42px] flex flex-col items-center">
+              <img src="src/assets/face.png" alt="" class="mb-0" />
+              <span class="mt-[20px] font-[600] text-[#070052]"
+                >Alastair Cook</span
+              >
+              <span class="desc-section">Businessmen</span>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div>
+            <div
+              class="relative z-10 rounded-xl bg-white px-[5px] py-[5px] transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:z-0 after:-translate-x-1/2 after:translate-y-[100%] after:border-[40px] after:border-b-0 after:border-solid after:border-x-transparent after:border-t-white after:content-[''] hover:drop-shadow-[0_22px_54px_rgba(0,0,0,0.07)] md:px-[28px] md:py-[42px]"
+            >
+              <p class="desc-section line-clamp-6 max-w-[514px] text-center">
+                Fantastic platform for online banking. The best online banking
+                platform I have used. Payments, loans, and money transfers have
+                never been so much easier before. I am very much happy about
+                this great online bank.
+              </p>
+              <!-- tam giac -->
+            </div>
+            <div class="mt-[42px] flex flex-col items-center">
+              <img src="src/assets/Mask Group.png" alt="" class="mb-0" />
+              <span class="mt-[20px] font-[600] text-[#070052]"
+                >Alastair Cook</span
+              >
+              <span class="desc-section">Businessmen</span>
+            </div>
+          </div>
+        </div>
+        <!-- dot -->
+        <div class="mt-[40px] flex justify-center gap-x-2">
+          <div
+            class="h-[6px] w-[18px] rounded-xs border-[1px] border-solid border-[#9B9FAB] hover:bg-[#7264D6]"
+          ></div>
+          <div
+            class="h-[6px] w-[18px] rounded-xs border-[1px] border-solid border-[#9B9FAB] hover:bg-[#7264D6]"
+          ></div>
+          <div
+            class="h-[6px] w-[18px] rounded-xs border-[1px] border-solid border-[#9B9FAB] hover:bg-[#7264D6]"
+          ></div>
+        </div>
+      </section>
+      <!-- update -->
+      <section class="mt-[100px] md:mt-[160px]">
+        <!-- top -->
+        <div
+          class="flex flex-col items-start md:flex-row md:items-center md:justify-between"
+        >
+          <!-- top left -->
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <span class="h-[2px] w-[18px] bg-gray-400"></span>
+              <span class="desc-section ml-[12px]">Our Blog</span>
+            </div>
+            <h2 class="heading-section">Get The Updates</h2>
+            <p class="desc-section max-w-[435px]">
+              Read our blog for the regular updates about us and about our
+              online banking services that may inspire you
+            </p>
+          </div>
+          <!-- top right -->
+          <button class="button-primary mt-[30px] md:mt-0">Read All</button>
+        </div>
+        <!-- bottom -->
+        <div class="grid-col-1 mt-[70px] grid gap-[30px] lg:grid-cols-2">
+          <!-- item 1 -->
+          <div
+            class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+          >
+            <!-- media -->
+            <img src="src/assets/money.png" alt="" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <div class="desc-heading">July 03, 2022</div>
+              <h3 class="mt-[10px]">
+                Online bank is the best and secure way to save in the future...
+              </h3>
+              <a href="#!" class="mt-[20px] text-[#7264D6]">Read Blog</a>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div
+            class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+          >
+            <!-- media -->
+            <img src="src/assets/Rectangle 4513.png" alt="" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <div class="desc-heading">July 03, 2022</div>
+              <h3 class="mt-[10px]">
+                Online bank is the best and secure way to save in the future...
+              </h3>
+              <a href="#!" class="mt-[20px] text-[#7264D6]">Read Blog</a>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div
+            class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+          >
+            <!-- media -->
+            <img src="src/assets/Rectangle 45132.png" alt="" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <div class="desc-heading">July 03, 2022</div>
+              <h3 class="mt-[10px]">
+                Online bank is the best and secure way to save in the future...
+              </h3>
+              <a href="#!" class="mt-[20px] text-[#7264D6]">Read Blog</a>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div
+            class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+          >
+            <!-- media -->
+            <img src="src/assets/Rectangle 45133.png" alt="" />
+            <!-- content -->
+            <div class="flex flex-col">
+              <div class="desc-heading">July 03, 2022</div>
+              <h3 class="mt-[10px]">
+                Online bank is the best and secure way to save in the future...
+              </h3>
+              <a href="#!" class="mt-[20px] text-[#7264D6]">Read Blog</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- download -->
+      <div
+        class="relative mt-[100px] flex flex-col items-center rounded-[24px] bg-[#7264D6] pt-[50px] pb-[50px] md:mt-[160px] md:pt-[100px] md:pb-[100px]"
+      >
+        <div class="flex items-center">
+          <span class="h-[2px] w-[18px] bg-gray-400"></span>
+          <span class="ml-[12px] font-[400] text-white">Our App</span>
+        </div>
+        <h2 class="mt-[12px] text-[40px] font-[700] text-white">
+          Download the Apps
+        </h2>
+        <p class="mt-[18px] max-w-[435px] text-center font-[400] text-white">
+          Read our blog for the regular updates about us and about our online
+          banking services that may inspire you
+        </p>
+        <div class="mt-[18px] flex gap-x-[16px]">
+          <img src="src/assets/ggplay.svg" alt="" />
+          <img src="src/assets/appstore.svg" alt="" />
+        </div>
+        <!-- decor -->
+        <img
+          src="src/assets/Star.svg"
+          alt=""
+          class="absolute top-10 left-20 hidden lg:block"
+        />
+        <img
+          src="src/assets/Star.svg"
+          alt=""
+          class="absolute top-10 right-20 hidden lg:block"
+        />
+        <img
+          src="src/assets/Star.svg"
+          alt=""
+          class="absolute bottom-10 left-30 hidden lg:block"
+        />
+        <img
+          src="src/assets/Star.svg"
+          alt=""
+          class="absolute right-30 bottom-10 hidden lg:block"
+        />
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="mt-[50px] md:mt-[100px]">
+      <!-- content -->
+      <div
+        class="grid grid-cols-2 justify-around bg-[#FAFBFF] px-[20px] pt-[30px] md:flex md:flex-row md:px-[100px] md:pt-[135px]"
+      >
+        <!-- logo -->
+        <div class="flex flex-col">
+          <div class="flex gap-x-2">
+            <img
+              src="src/assets/logo.svg"
+              alt="Celo Bank"
+              class="h-[24px] w-[24px]"
+            />
+            <img
+              src="src/assets/CeloBank.svg"
+              alt=""
+              class="h-[21px] w-[72px]"
+            />
+          </div>
+          <!-- email -->
+          <p class="desc-section mt-auto">email@gmail.com</p>
+        </div>
+        <!--site map  -->
+        <div class="">
+          <p class="font-4 mb-[24px] font-semibold">Sitemap</p>
+          <ul>
+            <li><a href="#!" class="desc-section">Home</a></li>
+            <li><a href="#!" class="desc-section">Abouts</a></li>
+            <li><a href="#!" class="desc-section">Growers</a></li>
+            <li><a href="#!" class="desc-section">Merchants</a></li>
+            <li><a href="#!" class="desc-section">Contact</a></li>
+            <li>
+              <a href="#!" class="desc-section mt-[70px] block"
+                >(123) 456-7890</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- social -->
+        <div class="">
+          <p class="font-4 mb-[24px] font-semibold">Social</p>
+          <ul>
+            <li><a href="#!" class="desc-section">Facebook</a></li>
+            <li><a href="#!" class="desc-section">Linkedin</a></li>
+            <li><a href="#!" class="desc-section">Instagram</a></li>
+            <li><a href="#!" class="desc-section">Twitter</a></li>
+          </ul>
+        </div>
+        <!-- head office -->
+        <div class="">
+          <p class="font-4 mb-[24px] font-semibold">Head Office</p>
+          <p class="desc-section max-w-[371px]">
+            Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+            Charlottesville, CA 45565
+          </p>
+          <p class="font-4 mt-[48px] hidden font-semibold md:block">
+            News letter
+          </p>
+          <div class="mt-[24px] hidden md:block">
+            <form action="" class="flex gap-x-[20px]">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email address..."
+                required
+                class="w-[270px] rounded-[6px] border-2 border-solid border-[#8E919A] p-[12px] focus:ring-1 focus:ring-[#7264D6] focus:outline-none"
+              />
+              <button class="rounded-[6px] bg-[#7264D6] p-[14px] text-white">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- form on mobile -->
+        <div class="md:hidden">
+          <p class="font-4 mt-[48px] block font-semibold">News letter</p>
+          <div class="mt-[24px]">
+            <form action="" class="flex gap-x-[20px]">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email address..."
+                required
+                class="w-[270px] rounded-[6px] border-2 border-solid border-[#8E919A] p-[12px] focus:ring-1 focus:ring-[#7264D6] focus:outline-none"
+              />
+              <button class="rounded-[6px] bg-[#7264D6] p-[14px] text-white">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- decor -->
+      <div class="mt-[28px] bg-[#7264D6]">
+        <p class="py-[28px] text-center font-[400] text-white">
+          © 2025 Media All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
