@@ -14,7 +14,11 @@
     />
   </head>
   <body>
-    <div class="container mx-auto pt-[42px]">
+    <div
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
       <div class="flex items-center">
         <a href="index.html" class="flex gap-x-2">
           <img
@@ -41,13 +45,13 @@
         </div>
       </div>
 
-      <section class="mt-[76px]">
+      <section class="mt-[76px]" data-reveal="up">
         <div class="flex items-center">
           <span class="h-[2px] w-[18px] bg-gray-400"></span>
           <span class="desc-section ml-[12px]">Contact</span>
         </div>
         <div class="mt-[20px] grid gap-[32px] md:grid-cols-[1.05fr_0.95fr]">
-          <div>
+          <div data-reveal="left">
             <h1 class="text-[3rem]/[3.6rem] font-[700]">
               Let's talk about your next payment experience.
             </h1>
@@ -70,7 +74,10 @@
               </div>
             </div>
           </div>
-          <div class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]">
+          <div
+            class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]"
+            data-reveal="right"
+          >
             <h2 class="text-[1.5rem] font-[600]">Send a message</h2>
             <form class="mt-[20px] space-y-[16px]">
               <input
@@ -104,7 +111,10 @@
       </section>
 
       <section class="mt-[100px] md:mt-[140px]">
-        <div class="rounded-[20px] bg-[#7264D6] p-[32px] text-white md:p-[48px]">
+        <div
+          class="rounded-[20px] bg-[#7264D6] p-[32px] text-white md:p-[48px]"
+          data-reveal="up"
+        >
           <h2 class="text-[2rem] font-[700]">Visit our head office</h2>
           <p class="mt-[12px] max-w-[540px] font-[400]">
             Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
@@ -118,7 +128,7 @@
       </section>
     </div>
 
-    <footer class="mt-[50px] md:mt-[100px]">
+    <footer class="mt-[50px] md:mt-[100px]" data-reveal="up">
       <div
         class="grid grid-cols-2 justify-around bg-[#FAFBFF] px-[20px] pt-[30px] md:flex md:flex-row md:px-[100px] md:pt-[135px]"
       >
@@ -199,5 +209,6 @@
         </p>
       </div>
     </footer>
+    <script type="module" src="src/scroll-animations.js"></script>
   </body>
 </html>

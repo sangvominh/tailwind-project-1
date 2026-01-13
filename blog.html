@@ -14,7 +14,11 @@
     />
   </head>
   <body>
-    <div class="container mx-auto pt-[42px]">
+    <div
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
       <div class="flex items-center">
         <a href="index.html" class="flex gap-x-2">
           <img
@@ -41,7 +45,7 @@
         </div>
       </div>
 
-      <section class="mt-[76px]">
+      <section class="mt-[76px]" data-reveal="up">
         <div class="flex items-center">
           <span class="h-[2px] w-[18px] bg-gray-400"></span>
           <span class="desc-section ml-[12px]">Blog</span>
@@ -58,6 +62,8 @@
       <section class="mt-[60px] grid gap-[30px] md:grid-cols-2">
         <article
           class="flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px]"
+          data-reveal="up"
+          data-reveal-delay="0"
         >
           <img src="src/assets/money.png" alt="Security" />
           <div>
@@ -70,6 +76,8 @@
         </article>
         <article
           class="flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px]"
+          data-reveal="up"
+          data-reveal-delay="120"
         >
           <img src="src/assets/Rectangle 4513.png" alt="Savings" />
           <div>
@@ -82,6 +90,8 @@
         </article>
         <article
           class="flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px]"
+          data-reveal="up"
+          data-reveal-delay="220"
         >
           <img src="src/assets/Rectangle 45132.png" alt="Global" />
           <div>
@@ -94,6 +104,8 @@
         </article>
         <article
           class="flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px]"
+          data-reveal="up"
+          data-reveal-delay="320"
         >
           <img src="src/assets/Rectangle 45133.png" alt="Automation" />
           <div>
@@ -107,7 +119,7 @@
       </section>
 
       <section class="mt-[80px] md:mt-[120px]">
-        <div class="rounded-[20px] bg-[#FAFBFF] p-[32px] md:p-[48px]">
+        <div class="rounded-[20px] bg-[#FAFBFF] p-[32px] md:p-[48px]" data-reveal="up">
           <div class="flex flex-col gap-[20px] md:flex-row md:items-center md:justify-between">
             <div>
               <h2 class="text-[2rem] font-[700] text-[#212832]">Stay in the loop</h2>
@@ -132,7 +144,7 @@
       </section>
     </div>
 
-    <footer class="mt-[50px] md:mt-[100px]">
+    <footer class="mt-[50px] md:mt-[100px]" data-reveal="up">
       <div
         class="grid grid-cols-2 justify-around bg-[#FAFBFF] px-[20px] pt-[30px] md:flex md:flex-row md:px-[100px] md:pt-[135px]"
       >
@@ -213,5 +225,6 @@
         </p>
       </div>
     </footer>
+    <script type="module" src="src/scroll-animations.js"></script>
   </body>
 </html>

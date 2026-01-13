@@ -16,7 +16,13 @@
     />
   </head>
   <body>
-    <div class="container mx-auto pt-[42px]">
+    <div
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
+      <section
+        class="mt-[76px] flex items-center justify-between gap-x-[40px] lg:gap-x-[80px] xl:gap-x-[120px]"
+      >
+    >
       <!-- header -->
       <div class="flex items-center">
         <!-- logo -->
@@ -51,9 +57,11 @@
         </div>
       </div>
       <!-- hero -->
-      <section class="mt-[76px] flex items-center justify-between">
+      <section
+        class="mt-[76px] flex items-center justify-between gap-x-[40px] lg:gap-x-[80px] xl:gap-x-[120px]"
+      >
         <!-- content -->
-        <section data-aos="fade-right">
+        <section data-reveal="left">
           <!-- decor -->
           <div class="flex items-center">
             <span class="h-[2px] w-[18px] bg-gray-400"></span>
@@ -89,16 +97,16 @@
           </p>
         </section>
         <!-- media -->
-        <div class="hidden md:block">
+        <div class="hidden md:block" data-reveal="right">
           <img src="src/assets/Mobile.png" alt="mobile" />
         </div>
       </section>
       <!-- how it work -->
       <section class="mt-[100px] flex justify-between md:mt-[160px]">
-        <div class="hidden md:block">
+        <div class="hidden md:block" data-reveal="left">
           <img src="src/assets/person.png" alt="person" />
         </div>
-        <section class="max-w-[470px]">
+        <section class="max-w-[470px]" data-reveal="right">
           <div class="flex items-center">
             <span class="h-[2px] w-[18px] bg-gray-400"></span>
             <span class="desc-section ml-[12px]">Digital Smart Wallet</span>
@@ -120,7 +128,9 @@
                 each.
               </h3>
               <p class="desc-section">
-                Be sure to use your rewards checking account as often as
+        <div
+          class="mt-[70px] flex justify-between gap-x-[30px] xl:justify-center xl:gap-x-[60px] 2xl:gap-x-[80px]"
+        >
                 possible in order to accrue APY!
               </p>
             </li>
@@ -135,7 +145,7 @@
         </section>
       </section>
       <!-- what client say -->
-      <section class="mt-[100px] md:mt-[160px]">
+      <section class="mt-[100px] md:mt-[160px]" data-reveal="up">
         <!-- top row -->
         <div class="flex flex-col items-center">
           <div class="flex items-center">
@@ -148,9 +158,11 @@
             services that may inspire you
           </p>
         </div>
-        <div class="mt-[70px] flex justify-between">
+        <div
+          class="mt-[70px] flex justify-between gap-x-[30px] xl:justify-center xl:gap-x-[60px] 2xl:gap-x-[80px]"
+        >
           <!-- box 1 -->
-          <div>
+          <div data-reveal="up" data-reveal-delay="120">
             <div
               class="relative z-10 rounded-xl bg-white px-[5px] py-[5px] transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:z-0 after:-translate-x-1/2 after:translate-y-[100%] after:border-[40px] after:border-b-0 after:border-solid after:border-x-transparent after:border-t-white after:content-[''] hover:drop-shadow-[0_22px_54px_rgba(0,0,0,0.07)] md:px-[28px] md:py-[42px]"
             >
@@ -171,7 +183,7 @@
             </div>
           </div>
           <!-- box 2 -->
-          <div>
+          <div data-reveal="up" data-reveal-delay="200">
             <div
               class="relative z-10 rounded-xl bg-white px-[5px] py-[5px] transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:z-0 after:-translate-x-1/2 after:translate-y-[100%] after:border-[40px] after:border-b-0 after:border-solid after:border-x-transparent after:border-t-white after:content-[''] hover:drop-shadow-[0_22px_54px_rgba(0,0,0,0.07)] md:px-[28px] md:py-[42px]"
             >
@@ -206,7 +218,7 @@
         </div>
       </section>
       <!-- update -->
-      <section class="mt-[100px] md:mt-[160px]">
+      <section class="mt-[100px] md:mt-[160px]" data-reveal="up">
         <!-- top -->
         <div
           class="flex flex-col items-start md:flex-row md:items-center md:justify-between"
@@ -231,6 +243,8 @@
           <!-- item 1 -->
           <div
             class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+            data-reveal="up"
+            data-reveal-delay="0"
           >
             <!-- media -->
             <img src="src/assets/money.png" alt="" />
@@ -246,6 +260,8 @@
           <!-- item 2 -->
           <div
             class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+            data-reveal="up"
+            data-reveal-delay="120"
           >
             <!-- media -->
             <img src="src/assets/Rectangle 4513.png" alt="" />
@@ -261,6 +277,8 @@
           <!-- item 3 -->
           <div
             class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+            data-reveal="up"
+            data-reveal-delay="220"
           >
             <!-- media -->
             <img src="src/assets/Rectangle 45132.png" alt="" />
@@ -276,6 +294,8 @@
           <!-- item 4 -->
           <div
             class="w-max-[570px] flex items-center gap-[22px] rounded-[12px] border-[2px] border-solid border-[#DFE2E8] p-[28px] hover:shadow-[0_20px_50px_0_rgba(0,0,0,0.07)]"
+            data-reveal="up"
+            data-reveal-delay="320"
           >
             <!-- media -->
             <img src="src/assets/Rectangle 45133.png" alt="" />
@@ -293,6 +313,7 @@
       <!-- download -->
       <div
         class="relative mt-[100px] flex flex-col items-center rounded-[24px] bg-[#7264D6] pt-[50px] pb-[50px] md:mt-[160px] md:pt-[100px] md:pb-[100px]"
+        data-reveal="up"
       >
         <div class="flex items-center">
           <span class="h-[2px] w-[18px] bg-gray-400"></span>
@@ -333,7 +354,7 @@
       </div>
     </div>
     <!-- footer -->
-    <footer class="mt-[50px] md:mt-[100px]">
+    <footer class="mt-[50px] md:mt-[100px]" data-reveal="up">
       <!-- content -->
       <div
         class="grid grid-cols-2 justify-around bg-[#FAFBFF] px-[20px] pt-[30px] md:flex md:flex-row md:px-[100px] md:pt-[135px]"
@@ -434,5 +455,6 @@
         </p>
       </div>
     </footer>
+    <script type="module" src="src/scroll-animations.js"></script>
   </body>
 </html>

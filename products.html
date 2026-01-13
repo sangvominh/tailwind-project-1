@@ -14,7 +14,11 @@
     />
   </head>
   <body>
-    <div class="container mx-auto pt-[42px]">
+    <div
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
+      class="container mx-auto px-5 pt-[42px] lg:px-10 xl:px-[60px] 2xl:max-w-[1280px]"
+    >
       <div class="flex items-center">
         <a href="index.html" class="flex gap-x-2">
           <img
@@ -42,7 +46,7 @@
       </div>
 
       <section class="mt-[76px] grid gap-[40px] md:grid-cols-[1.1fr_0.9fr] md:items-center">
-        <div>
+        <div data-reveal="left">
           <div class="flex items-center">
             <span class="h-[2px] w-[18px] bg-gray-400"></span>
             <span class="desc-section ml-[12px]">Products</span>
@@ -63,19 +67,23 @@
             >
           </div>
         </div>
-        <div class="hidden md:block">
+        <div class="hidden md:block" data-reveal="right">
           <img src="src/assets/Mobile.png" alt="Mobile wallet" />
         </div>
       </section>
 
-      <section class="mt-[100px] md:mt-[140px]">
+      <section class="mt-[100px] md:mt-[140px]" data-reveal="up">
         <div class="flex items-center">
           <span class="h-[2px] w-[18px] bg-gray-400"></span>
           <span class="desc-section ml-[12px]">Core Products</span>
         </div>
         <h2 class="heading-section mt-[12px]">Everything you need to bank better</h2>
         <div class="mt-[40px] grid gap-[24px] md:grid-cols-3">
-          <div class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]">
+          <div
+            class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]"
+            data-reveal="up"
+            data-reveal-delay="0"
+          >
             <img src="src/assets/money.png" alt="Celo Wallet" />
             <h3 class="mt-[20px] text-[1.35rem] font-[600]">Celo Wallet</h3>
             <p class="desc-section mt-[12px]">
@@ -83,7 +91,11 @@
               balance notifications.
             </p>
           </div>
-          <div class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]">
+          <div
+            class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]"
+            data-reveal="up"
+            data-reveal-delay="120"
+          >
             <img src="src/assets/Rectangle 4513.png" alt="Cards" />
             <h3 class="mt-[20px] text-[1.35rem] font-[600]">Virtual & Physical Cards</h3>
             <p class="desc-section mt-[12px]">
@@ -91,7 +103,11 @@
               team expense.
             </p>
           </div>
-          <div class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]">
+          <div
+            class="rounded-[16px] border border-solid border-[#DFE2E8] p-[24px]"
+            data-reveal="up"
+            data-reveal-delay="220"
+          >
             <img src="src/assets/Rectangle 45132.png" alt="Global transfers" />
             <h3 class="mt-[20px] text-[1.35rem] font-[600]">Global Transfers</h3>
             <p class="desc-section mt-[12px]">
@@ -103,7 +119,10 @@
       </section>
 
       <section class="mt-[100px] md:mt-[140px]">
-        <div class="rounded-[20px] bg-[#FAFBFF] p-[32px] md:p-[48px]">
+        <div
+          class="rounded-[20px] bg-[#FAFBFF] p-[32px] md:p-[48px]"
+          data-reveal="up"
+        >
           <div class="flex flex-col gap-[28px] md:flex-row md:items-center md:justify-between">
             <div>
               <h2 class="text-[2rem] font-[700] text-[#212832]">Ready to build your stack?</h2>
@@ -118,7 +137,7 @@
       </section>
     </div>
 
-    <footer class="mt-[50px] md:mt-[100px]">
+    <footer class="mt-[50px] md:mt-[100px]" data-reveal="up">
       <div
         class="grid grid-cols-2 justify-around bg-[#FAFBFF] px-[20px] pt-[30px] md:flex md:flex-row md:px-[100px] md:pt-[135px]"
       >
@@ -199,5 +218,6 @@
         </p>
       </div>
     </footer>
+    <script type="module" src="src/scroll-animations.js"></script>
   </body>
 </html>
